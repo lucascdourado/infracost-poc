@@ -26,7 +26,7 @@ jobs:
       #   INFRACOST_TERRAFORM_CLOUD_HOST: app.terraform.io # Change this if you're using Terraform Enterprise
     steps:
     - name: Checkout
-      uses: actions/setup@v2
+      uses: actions/checkout@v2
       # See https://github.com/infracost/actions/tree/master/setup for other inputs
       # If you can't use this action, see Docker images in https://infracost.io/cicd
     - name: Setup Terraform
