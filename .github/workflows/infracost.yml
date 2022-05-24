@@ -2,7 +2,11 @@
    # describe other options for 'on', 'pull_request' is a good default.
 name: 'Infracost'
 
-on: [pull_request]
+on: 
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
 jobs:
   infracost:
     name: Infracost
