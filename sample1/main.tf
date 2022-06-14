@@ -35,8 +35,7 @@ provider "aws" {
 #tfsec:ignore:aws-ec2-enforce-http-token-imds
 resource "aws_instance" "web_app" {
   ami           = "ami-674cbc1e"
-  instance_type = "m5.4xlarge" # <<<<< Try changing this to m5.8xlarge to compare the costs
-
+  instance_type = "m5.4xlarge"
   #security_groups = [ aws_security_group.allow_tls.id ]
 
   root_block_device {
